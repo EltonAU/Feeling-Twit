@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Latest compiled and minified CSS -->
+   <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<title>Feeling Tweet</title>
+
+    <link rel="stylesheet" type="text/css" href="../my_css/my_css.css">
+    <script src="../my_js/home.js" type ="text/javascript"></script>
+   
+    
+</head>
+<body>
+        <div class="first jumbotron center-block ">
+                <div class="container">
+                    <h1>Feeling Tweet</h1>
+                    <p>Welcome to Feeling Tweet! Write some words below to find out what people think about them!</p>
+                    <br>
+                    <input type="text" class="form-control littleMargin center-block text-center" value="Dog" id="text_input" placeholder="Address Keyword">
+                    <br>
+                    <button type="button" class="btn btn-primary submit big" onclick="GetData()">Search</button><br>
+                    <br>
+                    <button type="button" class="btn btn-primary submit big" onclick="stopServer()">Stop</button>
+                </div>
+        </div>
+    
+    
+
+   
+    <div id="resultParent" class="second jumbotron center-block ">
+            <div id="result " class = "result  bigger pagination-centered text-center">What people feel about: </div>
+            <div id="result2 " class = "result2  bigger pagination-centered text-center">PO:33% NEU:33% NE:33%</div>
+            <div id='pie' class = "pagination-centered center-block "></div>
+    </div>
+    
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="//d3js.org/d3.v3.min.js"></script>
+    <script src="../my_js/new.js" type ="text/javascript"></script>
+    
+    <script>
+        change(1, 1, 1);
+       // startShowing()
+    </script>
+</body>
+</html>
